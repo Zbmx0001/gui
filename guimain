@@ -1,0 +1,139 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local bg = Instance.new("Frame")
+local bg2 = Instance.new("Frame")
+local bg3 = Instance.new("Frame")
+local mainbg = Instance.new("Frame")
+local _1 = Instance.new("TextButton")
+local _2 = Instance.new("TextButton")
+local _3 = Instance.new("TextButton")
+local _4 = Instance.new("TextButton")
+local barbg1 = Instance.new("Frame")
+local barbg2 = Instance.new("Frame")
+local bbg1 = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local bbg1_2 = Instance.new("Frame")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+bg.Name = "bg"
+bg.Parent = ScreenGui
+bg.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+bg.BorderColor3 = Color3.fromRGB(122, 122, 122)
+bg.BorderSizePixel = 4
+bg.Position = UDim2.new(0.767867029, 0, 0.506315887, 0)
+bg.Size = UDim2.new(0, 323, 0, 442)
+
+bg2.Name = "bg2"
+bg2.Parent = bg
+bg2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bg2.BorderColor3 = Color3.fromRGB(17, 17, 17)
+bg2.BorderSizePixel = 3
+bg2.Size = UDim2.new(0, 323, 0, 442)
+
+bg3.Name = "bg3"
+bg3.Parent = bg
+bg3.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+bg3.BorderColor3 = Color3.fromRGB(122, 122, 122)
+bg3.BorderSizePixel = 2
+bg3.Position = UDim2.new(0, 0, -0.000375330448, 0)
+bg3.Size = UDim2.new(0, 323, 0, 442)
+
+mainbg.Name = "mainbg"
+mainbg.Parent = bg3
+mainbg.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+mainbg.BorderColor3 = Color3.fromRGB(38, 38, 38)
+mainbg.Position = UDim2.new(0.142414868, 0, 0.0946235508, 0)
+mainbg.Size = UDim2.new(0, 277, 0, 400)
+
+_1.Name = "1"
+_1.Parent = mainbg
+_1.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+_1.BorderColor3 = Color3.fromRGB(29, 29, 29)
+_1.Position = UDim2.new(0.0252707582, 0, 0.0225000009, 0)
+_1.Size = UDim2.new(0, 263, 0, 28)
+_1.Font = Enum.Font.SourceSans
+_1.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1.TextSize = 14.000
+
+_2.Name = "2"
+_2.Parent = mainbg
+_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+_2.BorderColor3 = Color3.fromRGB(29, 29, 29)
+_2.Position = UDim2.new(0.0252707582, 0, 0.114999995, 0)
+_2.Size = UDim2.new(0, 263, 0, 28)
+_2.Font = Enum.Font.SourceSans
+_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+_2.TextSize = 14.000
+
+_3.Name = "3"
+_3.Parent = mainbg
+_3.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+_3.BorderColor3 = Color3.fromRGB(29, 29, 29)
+_3.Position = UDim2.new(0.0252707582, 0, 0.207499996, 0)
+_3.Size = UDim2.new(0, 263, 0, 28)
+_3.Font = Enum.Font.SourceSans
+_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+_3.TextSize = 14.000
+
+_4.Name = "4"
+_4.Parent = mainbg
+_4.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+_4.BorderColor3 = Color3.fromRGB(29, 29, 29)
+_4.Position = UDim2.new(0.0252707582, 0, 0.300000012, 0)
+_4.Size = UDim2.new(0, 263, 0, 28)
+_4.Font = Enum.Font.SourceSans
+_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+_4.TextSize = 14.000
+
+barbg1.Name = "barbg1"
+barbg1.Parent = bg3
+barbg1.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+barbg1.BorderColor3 = Color3.fromRGB(38, 38, 38)
+barbg1.Position = UDim2.new(0, 0, 0.000375324773, 0)
+barbg1.Size = UDim2.new(0, 46, 0, 441)
+
+barbg2.Name = "barbg2"
+barbg2.Parent = barbg1
+barbg2.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+barbg2.BorderColor3 = Color3.fromRGB(18, 18, 18)
+barbg2.Position = UDim2.new(1, 0, 0.0649834797, 0)
+barbg2.Size = UDim2.new(0, 277, 0, 13)
+
+bbg1.Name = "bbg1"
+bbg1.Parent = bg3
+bbg1.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+bbg1.BorderColor3 = Color3.fromRGB(38, 38, 38)
+bbg1.Position = UDim2.new(0.142414868, 0, -0.000375324773, 0)
+bbg1.Size = UDim2.new(0, 277, 0, 28)
+
+title.Name = "title"
+title.Parent = bbg1
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.0481099673, 0, -0.0357142873, 0)
+title.Size = UDim2.new(0, 250, 0, 28)
+title.SizeConstraint = Enum.SizeConstraint.RelativeYY
+title.Font = Enum.Font.Roboto
+title.Text = "Zbmxs GUI | Game Name:"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextStrokeColor3 = Color3.fromRGB(59, 59, 59)
+title.TextStrokeTransparency = 0.000
+title.TextWrapped = true
+title.TextXAlignment = Enum.TextXAlignment.Left
+
+bbg1_2.Name = "bbg1"
+bbg1_2.Parent = bbg1
+bbg1_2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+bbg1_2.BorderColor3 = Color3.fromRGB(38, 38, 38)
+bbg1_2.Position = UDim2.new(0.903705478, 0, 1.03533936, 0)
+bbg1_2.Size = UDim2.new(0, 26, 0, 13)
